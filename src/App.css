@@ -25,13 +25,6 @@
   color: #666666;
 }
 
-/* Stili per la sezione delle risposte */
-.answer-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
 .answer-section button {
   flex: 1;
   padding: 10px 20px;
@@ -184,4 +177,11 @@
 
 .restart-game-button button:hover {
   background-color: orangered; /* darker blue on hover */
+}
+
+.answer-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: column !important;
 }

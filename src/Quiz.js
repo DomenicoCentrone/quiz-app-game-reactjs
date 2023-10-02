@@ -23,6 +23,11 @@ function Quiz({ questions }) {
         }
     };
 
+    const findCorrectAnswer = (question) => {
+        return question.options.find(option => option.isCorrect).text;
+    };
+    
+
     return (
         <div className='boxRisultati'>
             {showResults ? (
@@ -36,7 +41,7 @@ function Quiz({ questions }) {
                                     <br />
                                     <span className="answer-label">Tua risposta:</span> {userAnswers[index].text}
                                     <span className={userAnswers[index].isCorrect ? "" : "incorrect"}>
-                                        {userAnswers[index].isCorrect ? "Corretta" : "Errata"}
+                                        {userAnswers[index].isCorrect ? "Corretta" : `Risposta: ${findCorrectAnswer(question)}`}
                                     </span>
                                 </li>
                             ))}
