@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Quiz React Game 📚
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[DEMO](https://magenta-lamington-0e8dad.netlify.app/)
 
-## Available Scripts
+Uno quiz game realizzato con React. Questa app propone domande suddivise per difficoltà e consente agli utenti di selezionare la difficoltà che preferiscono. Ogni domanda ha quattro opzioni di risposta, con una sola risposta corretta.
 
-In the project directory, you can run:
+## Installazione
 
-### `npm start`
+1. Clona questo repository.
+2. Naviga alla directory del progetto.
+3. Esegui `npm install` per installare tutte le dipendenze.
+4. Esegui `npm start` per avviare l'app.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Struttura
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **App.js**: File principale che contiene la logica per selezionare la difficoltà e mostrare le domande.
+- **Quiz.js**: Componente che visualizza le domande e le risposte.
+- **App.css**: Stili globali per l'app.
 
-### `npm test`
+## Funzionalità
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Selezione Difficoltà**: L'utente può scegliere tra tre livelli di difficoltà: facile, medio e difficile.
+2. **Visualizzazione Domande**: Una volta selezionata la difficoltà, vengono mostrate le domande relative a quel livello.
+3. **Riavvio Gioco**: L'utente ha la possibilità di riavviare il gioco in qualsiasi momento.
 
-### `npm run build`
+## Codice
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Il codice principale si trova nel file `App.js`. Qui abbiamo un array `questions` che contiene tutte le domande del quiz. Le domande sono suddivise per difficoltà e contengono sia il testo della domanda che le opzioni di risposta.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+La funzione `App` è il componente principale dell'applicazione. Utilizza lo stato `selectedDifficulty` per tenere traccia della difficoltà selezionata dall'utente. Se una difficoltà non è stata ancora selezionata, vengono mostrati i pulsanti di selezione. Una volta scelta una difficoltà, vengono visualizzate le domande corrispondenti e un pulsante per riavviare il gioco.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contribuire
 
-### `npm run eject`
+Se desideri contribuire al progetto, sentiti libero di inviare una Pull Request!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+È importante notare che alcuni dei caratteri nel tuo codice sembrano corrotti o non correttamente visualizzati (come `Qual Ã¨`). Potresti voler controllare il codice sorgente e assicurarti che tutti i caratteri siano visualizzati correttamente.
