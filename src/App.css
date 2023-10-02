@@ -1,0 +1,187 @@
+/* Stili globali per l'app */
+.App {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Stili per la sezione delle domande */
+.question-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.question-section span {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #666666;
+}
+
+/* Stili per la sezione delle risposte */
+.answer-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.answer-section button {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  background-color: #0099ff;
+  color: #ffffff;
+}
+
+.answer-section button:hover {
+  background-color: #0077cc;
+}
+
+/* Stili per la sezione dei risultati */
+.results-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* Sezione dei risultati */
+.results-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.results-section div {
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Lista di riepilogo */
+.review-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.review-list li {
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #fafafa;
+}
+
+/* Stile per la domanda */
+.review-list .question-label {
+  font-weight: bold;
+  background-color: #0099ff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Stile per la risposta dell'utente */
+.review-list .answer-label {
+  font-weight: bold;
+  background-color: #ff9900;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Indicatore per risposte corrette e errate */
+.review-list li span {
+  font-weight: bold;
+  color: green;
+  display: block;
+  margin-top: 10px;
+}
+
+.review-list li span.incorrect {
+  color: red;
+}
+
+/* Stili per i pulsanti di selezione difficoltà */
+.difficulty-buttons {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Spaziatura tra i pulsanti */
+}
+
+.difficulty-buttons button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.difficulty-buttons button:hover {
+  background-color: #ddd; /* Colore di sfondo al passaggio del mouse */
+  transform: scale(1.05); /* Effetto di ingrandimento al passaggio del mouse */
+}
+
+.difficulty-buttons button:active {
+  transform: scale(0.95); /* Effetto di riduzione al click */
+}
+
+/* Colori specifici per ogni livello di difficoltà */
+.difficulty-buttons .facile {
+  background-color: #b8e994; /* Verde chiaro */
+}
+
+.difficulty-buttons .medio {
+  background-color: #f3d250; /* Giallo */
+}
+
+.difficulty-buttons .difficile {
+  background-color: #ea8685; /* Rosso chiaro */
+}
+
+.boxRisultati{
+  text-align: justify;
+}
+
+/* Restart Game Button Styling */
+.restart-game-button {
+  margin: 20px 0;
+  text-align: center; /* centers the button horizontally */
+}
+
+.restart-game-button button {
+  background-color: red; /* primary blue color */
+  border: none;
+  border-radius: 5px;
+  color: #FFF; /* white text */
+  cursor: pointer; /* indicates clickable area */
+  font-size: 16px;
+  padding: 10px 20px; /* padding around the text */
+  transition: background-color 0.3s ease; /* smooth color transition */
+}
+
+.restart-game-button button:hover {
+  background-color: orangered; /* darker blue on hover */
+}
