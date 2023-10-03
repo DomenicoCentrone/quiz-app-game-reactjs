@@ -1,5 +1,5 @@
 # Quiz React Game 📚
-![quiz-game](https://github.com/DomenicoCentrone/quiz-react-app-game/assets/76876906/eca6b973-0b71-4ee8-a9e7-cb79497474fd)
+![quiz-game](https://github.com/DomenicoCentrone/quiz-react-app-game/assets/76876906/df26e2a9-6190-4dfa-b6a7-8813158c7ca2)
 
 [DEMO](https://magenta-lamington-0e8dad.netlify.app/)
 
